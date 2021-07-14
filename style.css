@@ -1,0 +1,244 @@
+/*----- 
+fonts 
+-------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+/*----- --
+utilities 
+--------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color:white
+}
+.flexible-container{
+    display: flex;
+    margin-bottom: 100px; 
+    background-color:#2D25A0;
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    font-size: 60px;
+    padding-top: 0%;
+}
+h3{
+    color: black;
+    text-align: center;
+   
+}
+p{
+    color: rgb(114, 110, 110);
+    font-size: 12px;
+    margin:5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.half-width  {
+    margin-top: 100px;
+    margin-left: 160px;
+    width: 100%;
+   line-height: 20px;
+
+}
+.half-width img{
+    width: 81%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 995px;
+    padding: 0px;
+    margin-top: 21px;
+    border-radius: 5px;
+   
+}
+/*===============
+ Button properties
+ ================= */
+.button{
+    
+        background-color: #E02C6D; 
+        border-radius: 0;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      
+}
+/*----------------
+ Hoverable Button
+ ----------------- */
+.button:hover {
+    background-color: green;
+    color: white;
+}
+/*=======
+   Icon 
+ ========*/
+.fas {
+    padding-left: 10px;
+}
+/*========== 
+Players Style
+============= */
+.players{
+    display:grid;
+    grid-template-columns: repeat(3,4fr);
+    grid-row-gap:30px ;
+}
+.player{
+    box-shadow: 10px 10px 40px rgb(206, 200, 200);
+    width:93%;
+    padding-left:2%;
+    padding-right:0%;
+    margin-left: 1%;
+    margin-right: 9%;
+    border-radius: 20px;
+   
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius:10px ;
+    margin-top: 8px;
+}
+/*============
+ Video style
+============= */
+.magic{
+    color: violet;
+    text-align: center;
+    width:100%
+}
+.mp4{
+    
+    padding-left: 0px;
+    width: 70%;
+}
+.youtube{
+    width: 70%;
+    height: 500px;
+}
+/*============
+ Footer style
+ =============*/
+.footer-text{
+    color: rgb(20, 20, 20);
+    text-align: center;
+    background-color: white;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-size: 20px;
+}
+.footer-box{
+   
+    width: 483px;
+    height: 213px;
+    margin-left: 441px;
+    margin-right: 481px;
+    margin-top: 110px;
+    padding-bottom: 50px;
+
+}
+.footer, img{
+    width: 100%;
+
+}
+.fab{
+    color: rgb(109, 115, 153);
+    font-size:22px
+}
+/*=================
+ More player photos
+ ================= */
+.photo-album {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.photo-frame {
+    width: 236px;
+    height: 200px;
+    border: 1px solid rgb(176, 155, 255);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 236px;
+    border-radius: 0px;
+    padding-left: 0px;
+}
+
+.photo-detail {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.photo-frame:hover .photo-detail {
+    display: block;
+    background-color: rgba(32, 134, 218, 0.432);
+}
+
+.photo-detail h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.photo-detail p {
+    color: rgb(181, 181, 185);
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5) rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* Media Queries */
+/* Mobile devices */
+@media only screen and (max-width:688px){
+   .flexible-container {
+      display: grid;
+      width: 500px;
+      height: 100%;
+      margin-left: 24px;
+  }
+  .players{
+      display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 30px;
+  }
+  .footer-box{
+      margin-left: 0px;
+  }
+  .half-width img{
+    width: 81%;
+    margin-left: -5px;
+  }
+  .half-width{
+      margin-left: 25px;
+  }
+  main{
+    
+    margin-left: 150px;
+  }
+  .magic{
+      padding-left:70px ;
+  }
+}
